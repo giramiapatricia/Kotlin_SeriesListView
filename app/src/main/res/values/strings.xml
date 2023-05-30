@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Kotlin_Series</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="splash">Splash</string>
+    <string name="logo">Burger</string>
+    <string name="name">Burger Point</string>
+    <string name="required">This field is required</string>
+    <string name="email">Enter your email</string>
+    <string name="email_hint">Email</string>
+    <string name="password">Enter your Password</string>
+    <string name="password_hint">Password</string>
+    <string name="login_text">Login to Burger Joint</string>
+    <string name="button_text">Login</string>
+    <string name="login_button_1">Logging in</string>
+    <string name="submit">Submit</string>
+    <string name="auth">You are authorized</string>
+    <string name="wrong">Wrong Details</string>
+    <string name="required_is_field">All fields Required</string>
+</resources>

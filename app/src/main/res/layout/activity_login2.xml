@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dark"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="137dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/blue"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/login_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/blue"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/blue"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_wrapBehaviorInParent="vertical_only" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:helperTextTextColor="@color/blue"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/blue"
+            android:hint="@string/email"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/blue"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/blue"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:helperTextTextColor="@color/blue"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:drawableEnd="@android:drawable/ic_menu_view"
+            android:drawableTint="@color/blue"
+            android:hint="@string/password"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@color/blue"
+            android:textColorHint="@android:color/white"
+            android:textColorLink="@color/blue"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="292dp"
+        android:layout_height="61dp"
+        android:contentDescription="@string/login_button_1"
+        android:text="@string/button_text"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/blue"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintVertical_bias="0.364" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
