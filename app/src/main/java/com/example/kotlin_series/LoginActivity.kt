@@ -1,13 +1,14 @@
 package com.example.kotlin_series
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
+//import android.util.Log
+//import android.view.View
 import android.widget.Button
 import com.google.android.material.textfield.TextInputEditText
-import org.w3c.dom.Text
+//import org.w3c.dom.Text
 
 class LoginActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -16,11 +17,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login2)
 
         val button = findViewById<Button>(R.id.button)
-        button.text = "Submit"
+        button.text = "Login"
 
         fun checkDetails(){
             val email = findViewById<TextInputEditText>(R.id.textInputEditText3).text
             val password = findViewById<TextInputEditText>(R.id.textInputEditText4).text
+            val intent = Intent(this, BottomNavigation::class.java)
             val mapLoginDetails = mapOf("customer1@gmail.com" to "customer1","customer2@gmail.com" to "customer2","customer3@gmail.com" to "customer3")
             if (email!!.isEmpty() && password!!.isEmpty()){
                 button.text = "All fields are required"
@@ -31,6 +33,7 @@ class LoginActivity : AppCompatActivity() {
                 if(emails.contains(email.toString()) && passwords.contains(password.toString())) {
                     if (mapLoginDetails[email.toString()] == password.toString()){
                         button.text = "You are authorized"
+                        startActivity(intent)
                     } else {
                         button.text = "wrong details"
                     }

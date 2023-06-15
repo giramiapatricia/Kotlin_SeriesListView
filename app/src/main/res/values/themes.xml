@@ -1,9 +1,17 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Kotlin_Series" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
     </style>
 
-    <style name="Theme.Kotlin_Series" parent="Base.Theme.Kotlin_Series" />
+    <style name="Theme.Kotlin_Series" parent="Base.Theme.Kotlin_Series">
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
 </resources>
