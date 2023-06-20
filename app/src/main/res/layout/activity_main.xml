@@ -4,30 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    android:theme="@style/Theme.Kotlin_Series"
+    android:theme="@style/Theme.Material3.Dark"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="0.2"
-        android:contentDescription="@string/splash"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/_strawberry_salad__strawberry_black_pepper_watercress_and_amaranth_salads___by_stocksy_contributor__darren_muir_" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+    <ListView
+        android:id="@+id/listv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absolutex="0dp"
+        tools:layout_editor_absolutey="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

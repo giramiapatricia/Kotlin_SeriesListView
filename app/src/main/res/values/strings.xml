@@ -47,7 +47,10 @@
     <string name="search">Search</string>
     <string name="promotions">Promotions</string>
     <string name="location">Delivered to:</string>
-    <string name="my_location">21 street, Komamboga - kisa...</string>
+    <string name="my_location">21 street, Komamboga - kisa…</string>
     <string name="off">-50%</string>
     <string name="edit">Edit</string>
+    <string name="country_name">Country Name</string>
+    <string name="description">Description</string>
+    <string name="item">item</string>
 </resources>

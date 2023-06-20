@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ListView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -40,3 +41,8 @@ class AccountFragment : Fragment() {
         _binding = null
     }
 }
+
+// listview
+// step 1 - define adapter listview - call list view by id
+// step 2 - define data source - array of strings
+// step 3 - display east african countries
